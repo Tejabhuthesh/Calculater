@@ -1,0 +1,22 @@
+<mvc:View controllerName="idcaliculator.calculater.controller.View1" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <f:SimpleForm editable="true" title="Calculator">
+                <f:content>
+                    <VBox justifyContent="Center" alignItems="Center">
+                        <Title text="Calculator" />
+                        <Input id="num" width="15rem" type="Text" />
+                          <Input id="num1" width="15rem" type="Number" />
+                           <Button text="multiply" press="multiply" type="Emphasized" width="3rem" />
+                        <HBox>
+                            <Button text="+" press="add" type="Emphasized" width="3rem" />
+                            <Button text="-" press="sub" type="Emphasized" width="3rem" />
+                            <Button text="/" press="division" type="Emphasized" width="3rem" />
+                             <Button text="submit" press="submit" type="Emphasized" width="3rem" />
+                        </HBox>
+                    </VBox>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
